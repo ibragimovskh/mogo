@@ -1,0 +1,25 @@
+@import './docs/bootstrap-reboot.scss';
+@import './docs/bootstrap.scss';
+@import './components/var';
+@import './components/header';
+@import './components/btn';
+@import './components/var';
+@import './components/footer';
+@import './components/media';
+
+:root {
+    font-family: "Montserrat", Arial, sans-serif;
+    font-size: 16px;
+}
+
+ul {
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
+
+    &:hover {
+        text-decoration: none;
+    }
+}

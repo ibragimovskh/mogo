@@ -1,0 +1,69 @@
+.header {
+    height: 100vh;
+    background-attachment: fixed;
+    background: linear-gradient(rgba(252, 227, 138, 0.9), rgba(243, 129, 129, 0.9)),
+        url("../../img/header-bg.png") no-repeat fixed;
+    background-size: cover;
+
+    .nav {
+        display: flex;
+        justify-content: space-around;
+
+        .logo {
+            font-size: 2rem;
+            font-family: "Kaushan Script", Arial;
+        }
+
+        &__toggle {
+            display: none;
+            align-items: center;
+            font-size: 1.5rem;
+            color: $wet-asphalt;
+            transition: 0.3s;
+
+            &:hover {
+                color: rgb(228, 81, 81);
+            }
+        }
+
+        &__list {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            margin: 0;
+
+
+        }
+
+        &__link {
+            font-size: 14px;
+            text-transform: uppercase;
+            margin-right: 1.5rem;
+            color: white;
+            font-weight: 500;
+            position: relative;
+
+            &::before {
+                transition: 300ms;
+                height: 4px;
+                content: "";
+                position: absolute;
+                background-color: $yellow;
+                width: 0%;
+                top: 20px;
+            }
+
+            &:hover {
+                color: $yellow;
+
+                &::before {
+                    width: 100%;
+                }
+            }
+
+            &:last-of-type {
+                margin: 0;
+            }
+        }
+    }
+}

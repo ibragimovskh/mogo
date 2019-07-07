@@ -1,0 +1,33 @@
+@media screen and (max-width: 992px) {
+    .nav {
+        &__toggle {
+            display: flex !important;
+        }
+
+        &__list {
+            display: block !important;
+            width: 100%;
+            position: absolute;
+            top: 50px;
+            left: 0;
+            height: 0;
+            overflow-y: hidden;
+            transition: all .3s;
+
+            &_show {
+                height: calc(100vh - 50px);
+                overflow-y: auto;
+            }
+        }
+
+        &__link {
+            width: 100%;
+            padding: 1rem .5rem;
+            display: block;
+
+            &::before {
+                display: none;
+            }
+        }
+    }
+}

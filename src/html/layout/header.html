@@ -1,0 +1,22 @@
+<header class="header">
+    <nav class="nav">
+        <div class="logo">Mogo</div>
+        <ul class="nav__list" :class="{nav__list_show: show}">
+            <a href="#!" class="nav__link">Главная</a>
+            <a href="#!" class="nav__link">Услуги</a>
+            <a href="#!" class="nav__link">О нас</a>
+            <a href="#!" class="nav__link">Контакты</a>
+            <a href="#!" class="nav__link">
+                <i class="fa fa-shopping-cart" aria-hidden="true"></i>
+
+            </a>
+            <a href="#!" class="nav__link">
+                <i class="fa fa-search" aria-hidden="true"></i>
+
+            </a>
+        </ul>
+        <a class="nav__toggle" href="#!" @click="toggleNav">
+            &#9776;
+        </a>
+    </nav>
+</header>
